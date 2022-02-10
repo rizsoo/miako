@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Borjúnyelv kocsonya, tormahab",
+        "category": "starter",
+        "price": "2290 Ft",
+        "allergers": "(1)",
+        "isDailyMenu": "true"
+    },
+    {
+        "title": "Babkrém leves, kolbász chips",
+        "category": "soup",
+        "price": "1690 Ft",
+        "allergers": "(1)",
+        "isDailyMenu": "true"
+    },
+    {
+        "title": "Rántott borjúláb, Waldorf saláta",
+        "category": "main",
+        "price": "4690 Ft",
+        "allergers": "(1,2,3,6,9)",
+        "isDailyMenu": "true"
+    },
+    {
+        "title": "Csirke Supreme, Zsálya, Pármai sonka, Polenta",
+        "category": "main",
+        "price": "4290 Ft",
+        "allergers": "(1)",
+        "isDailyMenu": "true"
+    },
+    {
+        "title": "Alma, palacsinta, fahéjhab",
+        "category": "dessert",
+        "price": "1490 Ft",
+        "allergers": "(1,2,6)",
+        "isDailyMenu": "true"
+    }
+]   
