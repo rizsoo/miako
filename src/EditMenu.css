@@ -1,0 +1,98 @@
+/* ÉTEL SZERKESZTŐ */
+.editmenu {
+  padding: 15px 5%;
+  background-color: white;
+}
+.add-food {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1024px;
+
+  padding: 15px;
+  margin-top: 15px;
+  background-color: rgb(227, 238, 248);
+}
+.add-food h3 {
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: aliceblue;
+}
+.add-food input {
+  font-size: 20px;
+  padding: 5px;
+  margin: 0;
+}
+.categories label {
+  margin-right: 15px;
+}
+.add-food p {
+  margin: 0;
+  font-weight: bold;
+}
+.editing-meal {
+  min-height: 120px;
+  border: 1px solid grey;
+  background-color: rgb(240, 240, 240);
+  margin: 10px 0;
+  max-width: 1024px;
+  border-radius: 8px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.edit2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.editing-meal h4 {
+  margin: 0;
+}
+.edit-foodname {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.title-on-edit {
+  background-color: transparent;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: unset;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 100%;
+}
+.editprice {
+  background-color: transparent;
+  border: unset;
+}
+.edit-edit-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.searchFoodinEditor {
+  padding: 5px;
+  margin: 20px auto;
+  width: 400px;
+  font-size: 20px;
+}
+.white-bc {
+  background-color: white !important;
+}
+.red-bc {
+  background-color: rgb(255, 230, 230);
+}
+.green-bc {
+  background-color: rgb(228, 255, 226);
+}
+.cat {
+  margin: 5px 0;
+}
+.save {
+  min-width: 80px;
+}

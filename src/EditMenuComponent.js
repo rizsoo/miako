@@ -1,4 +1,5 @@
 import React from 'react';
+import './EditMenu.css';
 
 class EditMenuComponent extends React.Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Menu from './Menu';
 import reportWebVitals from './reportWebVitals';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import EditMenu from './EditMenu';
@@ -9,7 +9,7 @@ import EditMenu from './EditMenu';
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}/>
+      <Route path="/" element={<Menu />}/>
       <Route path="/editmenu" element={<EditMenu />}/>
     </Routes>
   </BrowserRouter>,

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import EditMenuComponent from './EditMenuComponent';
 import { Link } from 'react-router-dom';
 import ListofItems from './ListofItems';
+import Header from './Header';
+import Todo from './Todo';
 
 const EditMenu = () => {
   const [inputTitle, setInputTitle] = useState("");
@@ -37,11 +39,21 @@ const getLocalItems = () => {
   }
 };
 
+
+  const [searchTerm, setSearchTerm] = useState('')
+  const filteredProducts = listofItems.filter(val => {
+    if (searchTerm === "" || val.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+      return val
+    } 
+  });
+
   console.log(listofItems);
-  console.log(localStorage.listofItems);
+  console.log(filteredProducts);
 
   return (
-  <div className='editmenu'>
+  <div>
+    <Header />
+    <div className='editmenu'>
     <Link to="/"><button>Vissza</button></Link>
     <EditMenuComponent 
       listofItems={listofItems}
@@ -56,10 +68,21 @@ const getLocalItems = () => {
       inputPrice={inputPrice}
       setInputPrice={setInputPrice}
       />
-    <ListofItems 
-      list={listofItems} 
-      setListofItems={setListofItems} 
+    <input className='searchFoodinEditor' type="text" placeholder={"Keresés az ételek között..."} onChange={event => {setSearchTerm(event.target.value)}}/>
+
+    {filteredProducts.length > 0 ? filteredProducts.map((item) => 
+    <Todo 
+      title={item.title}
+      cat={item.category}
+      price={item.price}
+      list={listofItems}
+      item={item}
+      key={item.id}
+      isActive={item.isActive}
+      setListofItems={setListofItems}
     />
+  ) : <p>Nincs találat...</p>}
+    </div>
   </div>
   )};
 
